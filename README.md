@@ -15,6 +15,6 @@
 
 
 ## ✔️ License & Copyright
-&copy; 2022 Pham Trong Nghia Licensed under the [GPL-3.0 LICENSE](https://github.com/ptnghia3502/object-oriented-programming/blob/main/README.md).
+&copy; 2022 Pham Trong Nghia Licensed under the [GPL-3.0 LICENSE](https://github.com/ptnghia3502/java-web-application-development/blob/main/LICENSE).
 
 > 👌 Feel free to use my repository and star it if you find something interesting 😄
