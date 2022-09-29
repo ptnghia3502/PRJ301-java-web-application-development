@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <description>day la data su dung global tren toan ung dung, no la read only, kieu String</description>
+        <param-name>country</param-name>
+        <param-value>Vietnam</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>myservlet.Servlet1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet2</servlet-name>
+        <servlet-class>myservlet.Servlet2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet3</servlet-name>
+        <servlet-class>myservlet.Servlet3</servlet-class>
+        <init-param>
+            <description>data chi dc su dung local trong class servlet3, read only, kieu String
+</description>
+            <param-name>language</param-name>
+            <param-value>Vietnamese</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet4</servlet-name>
+        <servlet-class>myservlet.Servlet4</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet5</servlet-name>
+        <servlet-class>myservlet.Servlet5</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet6</servlet-name>
+        <servlet-class>myservlet.Servlet6</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet7</servlet-name>
+        <servlet-class>myservlet.Servlet7</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/Servlet1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet2</servlet-name>
+        <url-pattern>/Servlet2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet3</servlet-name>
+        <url-pattern>/Servlet3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet4</servlet-name>
+        <url-pattern>/Servlet4</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet5</servlet-name>
+        <url-pattern>/Servlet5</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet6</servlet-name>
+        <url-pattern>/Servlet6</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet7</servlet-name>
+        <url-pattern>/Servlet7</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

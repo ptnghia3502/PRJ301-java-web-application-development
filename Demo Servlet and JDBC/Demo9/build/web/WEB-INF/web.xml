@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>mainController</filter-name>
+        <filter-class>myFilter.mainController</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>mainController</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>totinhServlet</servlet-name>
+        <servlet-class>myServlet.totinhServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>chiatayServlet</servlet-name>
+        <servlet-class>myServlet.chiatayServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>lihonServlet</servlet-name>
+        <servlet-class>myServlet.lihonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>totinhServlet</servlet-name>
+        <url-pattern>/totinhServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>chiatayServlet</servlet-name>
+        <url-pattern>/chiatayServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>lihonServlet</servlet-name>
+        <url-pattern>/lihonServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
